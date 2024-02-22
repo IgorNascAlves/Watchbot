@@ -1,0 +1,37 @@
+name: Build Executável
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Especifique a versão do Python que você precisa
+
+      - name: Instalar dependências
+        run: |
+          pip install pyinstaller
+          pip install -r requirements.txt
+
+      - name: Construir executável
+        run: |
+          pyinstaller --onefile --name watchbot --icon=imgs/watchbot.ico src/anotador.py
+          cp README.md dist/LEIA-ME.txt
+          cd dist
+          zip watchbot.zip watchbot LEIA-ME.txt
+
+      - name: Publicar artefatos
+        uses: actions/upload-artifact@v2
+        with:
+          name: watchbot
+          path: dist/watchbot.zip
