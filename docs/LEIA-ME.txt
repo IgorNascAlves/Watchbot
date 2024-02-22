@@ -1,0 +1,36 @@
+Boas vindas ao programa que vai te livrar da tendinite durante as gravações
+
+Este programa permite a anotação de cortes, retomadas, letterings, zoom e inserts nos vídeos em tempo real, durante uma gravação!
+
+Como usar:
+
+Salve o programa em uma pasta de fácil acesso, que contenha apenas o Anotador.exe
+
+O programa irá solicitar que você informe o id do curso e o número do vídeo que você deseja anotar.
+
+Ao preencher essas informações, você pode utilizar o comando "S", confirmando com Enter para iniciar o cronômetro
+Daí então, basta utilizar os comandos abaixo para realizar as anotações, após cada comando, será solicitada uma observação sobre a nota:
+
+"C" - Anota corte no tempo atual
+"V" - Anota a retomada no tempo atual, do último corte marcado
+"L" - Anota lettering no tempo atual, utilize o campo de observação para especificar o texto em destaque
+"Z" - Anota zoom no tempo atual, especifique no campo de observação o item da tela que deve ser destacado
+"I" - Anota inserção, utilize o "I" para grafismos, boxes, ou qualquer elemento visual que deva ser adicionado na imagem, lembre-se de especificar na observação
+
+Para finalizar a anotação, digite "Q" e pressione Enter. Esse comando fechará o programa.
+
+
+O programa irá gerar um arquivo de texto com as anotações feitas. O nome do arquivo terá o formato id_curso-número_do_vídeo.txt.
+Esse arquivo de texto pode ter seu conteúdo copiado e colado na planilha de notas de edição, sua formatação garante que cada informação seja distribuida na coluna correta
+
+Dicas e funcionalidades
+- O comando S reinicia o cronometro, e pode ser utilizado a qualquer momento da execução
+- Os comandos C e V funcionam juntos, marcando corretamente os cortes e retomadas, o Anotador informa na saída o tempo estimado do vídeo contando com os cortes
+- Caso não queira adicionar uma observação na anotação atual, basta apertar Enter novamente, possibilitando a entrada de um novo comando.
+
+Qualquer feedback ou sugestão de melhoria, me procure no discord ID: vinimoraes
+
+Agradecimento a quem me ajudou a desenvolver e testar o projeto:
+Igor Nascimento
+Ana Horiuchi
+ 
