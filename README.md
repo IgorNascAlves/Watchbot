@@ -10,12 +10,17 @@ Este é um simples script em Python para anotar vídeos durante a gravação. El
 - Calcule o tempo atual do vídeo e o tempo final estimado com os cortes.
 - Encerre a anotação do vídeo e salve as informações em um arquivo de texto.
 
-## Como Usar
+## Como Usar o Executável
 
-1. Certifique-se de ter o Python instalado em seu sistema.
-2. Instale as dependências executando `pip install -r requirements.txt`.
-3. Execute o script Python `anotador.py`.
+1. Faça o download do arquivo ZIP contendo o executável [aqui](link_para_o_download).
+2. Extraia o conteúdo do arquivo ZIP para uma pasta no seu computador.
+3. Execute o arquivo `watchbot.exe` para iniciar o anotador de vídeos.
 4. Siga as instruções no terminal para fazer suas anotações.
+
+---
+
+**Nota:** Certifique-se de ter o Python instalado em seu sistema para executar o arquivo `watchbot.exe`.
+
 
 ## Comandos
 
@@ -27,6 +32,18 @@ Este é um simples script em Python para anotar vídeos durante a gravação. El
 - `T`: Marca um tópico no vídeo.
 - `L`: Marca um lettering no vídeo.
 - `Q`: Encerra a anotação do vídeo.
+
+## Estrutura de Pastas e Arquivos
+
+.
+├── docs
+│ └── LEIA-ME.txt
+├── imgs
+│ └── watchbot.ico
+├── src
+│ └── anotador.py
+├── README.md
+└── requirements.txt
 
 ## Contribuindo
 
